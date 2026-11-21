@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="300" viewBox="0 0 700 300">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="350" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e3a8a">Student-Course Enrollment Analysis Matrix</text>
+<text x="350" y="150" text-anchor="middle" font-size="15" fill="#374151">Total Unique Students: 10 | Active Registrations: 24</text>
+<text x="350" y="185" text-anchor="middle" font-size="13" fill="#6b7280">(Install matplotlib/seaborn for 300 DPI high-density pixel heatmap)</text>
+</svg>

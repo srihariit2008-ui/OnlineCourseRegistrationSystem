@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="300" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e3a8a">Completed vs Pending Enrollments</text>
+<rect x="100" y="80" width="40" height="30" fill="#10b981" rx="4"/>
+<text x="160" y="102" font-size="16" font-weight="bold" fill="#1f2937">Completed: 11 Certificates</text>
+<rect x="100" y="140" width="40" height="30" fill="#f59e0b" rx="4"/>
+<text x="160" y="162" font-size="16" font-weight="bold" fill="#1f2937">Pending / In-Progress: 13 Registrations</text>
+</svg>

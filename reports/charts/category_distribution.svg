@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="350" viewBox="0 0 600 350">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="300" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e3a8a">Course Category Distribution</text>
+<rect x="80" y="100" width="30" height="25" fill="#2563eb" rx="3"/>
+<text x="125" y="118" font-size="16" font-weight="bold" fill="#1f2937">Technical Training: 10 Enrollments</text>
+<rect x="80" y="160" width="30" height="25" fill="#10b981" rx="3"/>
+<text x="125" y="178" font-size="16" font-weight="bold" fill="#1f2937">Certificate Course: 8 Enrollments</text>
+<rect x="80" y="220" width="30" height="25" fill="#f59e0b" rx="3"/>
+<text x="125" y="238" font-size="16" font-weight="bold" fill="#1f2937">Skill Development: 6 Enrollments</text>
+</svg>

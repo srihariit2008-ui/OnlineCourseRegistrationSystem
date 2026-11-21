@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="400" viewBox="0 0 750 400">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="375" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e3a8a">Course-wise Student Enrollment</text>
+<rect x="50" y="95" width="60" height="225" fill="#3b82f6" rx="4"/>
+<text x="80" y="87" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">5</text>
+<text x="80" y="340" text-anchor="middle" font-size="12" fill="#374151">CRS103</text>
+<rect x="135" y="140" width="60" height="180" fill="#3b82f6" rx="4"/>
+<text x="165" y="132" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">4</text>
+<text x="165" y="340" text-anchor="middle" font-size="12" fill="#374151">CRS101</text>
+<rect x="220" y="140" width="60" height="180" fill="#3b82f6" rx="4"/>
+<text x="250" y="132" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">4</text>
+<text x="250" y="340" text-anchor="middle" font-size="12" fill="#374151">CRS105</text>
+<rect x="305" y="185" width="60" height="135" fill="#3b82f6" rx="4"/>
+<text x="335" y="177" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">3</text>
+<text x="335" y="340" text-anchor="middle" font-size="12" fill="#374151">CRS102</text>
+<rect x="390" y="185" width="60" height="135" fill="#3b82f6" rx="4"/>
+<text x="420" y="177" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">3</text>
+<text x="420" y="340" text-anchor="middle" font-size="12" fill="#374151">CRS104</text>
+<rect x="475" y="230" width="60" height="90" fill="#3b82f6" rx="4"/>
+<text x="505" y="222" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">2</text>
+<text x="505" y="340" text-anchor="middle" font-size="12" fill="#374151">CRS106</text>
+<rect x="560" y="230" width="60" height="90" fill="#3b82f6" rx="4"/>
+<text x="590" y="222" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">2</text>
+<text x="590" y="340" text-anchor="middle" font-size="12" fill="#374151">CRS107</text>
+<rect x="645" y="275" width="60" height="45" fill="#3b82f6" rx="4"/>
+<text x="675" y="267" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">1</text>
+<text x="675" y="340" text-anchor="middle" font-size="12" fill="#374151">CRS108</text>
+<line x1="40" y1="320" x2="720" y2="320" stroke="#9ca3af" stroke-width="2"/>
+</svg>

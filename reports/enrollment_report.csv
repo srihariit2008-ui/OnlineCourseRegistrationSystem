@@ -1,0 +1,27 @@
+registration_id,student_id,student_name,department,course_id,course_name,category,duration,max_capacity,registration_date,enrollment_status,completion_status,completion_date
+1,STU101,"Aarav Sharma","Information Technology",CRS101,"Full Stack Web Development","Technical Training","60 Hours",5,2026-01-10,COMPLETED,COMPLETED,2026-02-28
+2,STU102,"Bhavna Patel","Computer Science",CRS101,"Full Stack Web Development","Technical Training","60 Hours",5,2026-01-11,COMPLETED,COMPLETED,2026-02-28
+3,STU104,"Divya Nair","Information Technology",CRS101,"Full Stack Web Development","Technical Training","60 Hours",5,2026-01-12,IN_PROGRESS,PENDING,
+4,STU108,"Hari Krishnan","Information Technology",CRS101,"Full Stack Web Development","Technical Training","60 Hours",5,2026-01-15,COMPLETED,COMPLETED,2026-11-21
+5,STU102,"Bhavna Patel","Computer Science",CRS102,"Data Structures & Algorithms in Java","Technical Training","45 Hours",5,2026-01-10,COMPLETED,COMPLETED,2026-02-25
+6,STU105,"Eshwar Reddy","Artificial Intelligence",CRS102,"Data Structures & Algorithms in Java","Technical Training","45 Hours",5,2026-01-14,IN_PROGRESS,PENDING,
+7,STU106,"Farhan Ali","Computer Science",CRS102,"Data Structures & Algorithms in Java","Technical Training","45 Hours",5,2026-01-16,REGISTERED,PENDING,
+8,STU101,"Aarav Sharma","Information Technology",CRS103,"Foundations of Data Science with Python","Certificate Course","60 Hours",6,2026-01-08,COMPLETED,COMPLETED,2026-03-05
+9,STU103,"Chirag Sundaram","Electronics & Comm",CRS103,"Foundations of Data Science with Python","Certificate Course","60 Hours",6,2026-01-12,COMPLETED,COMPLETED,2026-03-05
+10,STU105,"Eshwar Reddy","Artificial Intelligence",CRS103,"Foundations of Data Science with Python","Certificate Course","60 Hours",6,2026-01-14,IN_PROGRESS,PENDING,
+11,STU108,"Hari Krishnan","Information Technology",CRS103,"Foundations of Data Science with Python","Certificate Course","60 Hours",6,2026-01-15,REGISTERED,PENDING,
+12,STU109,"Indira Priyadarsh","Artificial Intelligence",CRS103,"Foundations of Data Science with Python","Certificate Course","60 Hours",6,2026-01-16,REGISTERED,PENDING,
+13,STU104,"Divya Nair","Information Technology",CRS104,"Machine Learning & Deep Neural Nets","Technical Training","50 Hours",3,2026-01-11,COMPLETED,COMPLETED,2026-03-01
+14,STU106,"Farhan Ali","Computer Science",CRS104,"Machine Learning & Deep Neural Nets","Technical Training","50 Hours",3,2026-01-13,IN_PROGRESS,PENDING,
+15,STU109,"Indira Priyadarsh","Artificial Intelligence",CRS104,"Machine Learning & Deep Neural Nets","Technical Training","50 Hours",3,2026-01-15,REGISTERED,PENDING,
+16,STU101,"Aarav Sharma","Information Technology",CRS105,"Professional Communication & Soft Skills","Skill Development","30 Hours",8,2026-01-09,COMPLETED,COMPLETED,2026-02-20
+17,STU103,"Chirag Sundaram","Electronics & Comm",CRS105,"Professional Communication & Soft Skills","Skill Development","30 Hours",8,2026-01-12,COMPLETED,COMPLETED,2026-02-20
+18,STU107,"Gayathri Menon","Mechanical Engg",CRS105,"Professional Communication & Soft Skills","Skill Development","30 Hours",8,2026-01-14,IN_PROGRESS,PENDING,
+19,STU110,"Jitendra Varma","Computer Science",CRS105,"Professional Communication & Soft Skills","Skill Development","30 Hours",8,2026-01-16,REGISTERED,PENDING,
+20,STU102,"Bhavna Patel","Computer Science",CRS106,"Agile Software Engineering & DevOps","Skill Development","35 Hours",6,2026-01-10,COMPLETED,COMPLETED,2026-02-22
+21,STU106,"Farhan Ali","Computer Science",CRS106,"Agile Software Engineering & DevOps","Skill Development","35 Hours",6,2026-01-14,IN_PROGRESS,PENDING,
+22,STU104,"Divya Nair","Information Technology",CRS107,"Advanced Database Design & SQL Tuning","Certificate Course","40 Hours",4,2026-01-12,COMPLETED,COMPLETED,2026-03-02
+23,STU108,"Hari Krishnan","Information Technology",CRS107,"Advanced Database Design & SQL Tuning","Certificate Course","40 Hours",4,2026-01-15,IN_PROGRESS,PENDING,
+24,STU103,"Chirag Sundaram","Electronics & Comm",CRS108,"Cyber Security & Network Defense","Certificate Course","40 Hours",4,2026-01-13,REGISTERED,PENDING,
+25,STU107,"Gayathri Menon","Mechanical Engg",CRS108,"Cyber Security & Network Defense","Certificate Course","40 Hours",4,2026-01-14,CANCELLED,PENDING,
+26,STU999,"Kavya Ramesh","Information Technology",CRS999,"Cloud Computing & Distributed Systems","Technical Training","40 Hours",4,2026-11-21,CANCELLED,PENDING,

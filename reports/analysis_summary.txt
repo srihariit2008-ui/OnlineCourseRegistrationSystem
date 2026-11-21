@@ -1,0 +1,37 @@
+===========================================================================
+ ONLINE COURSE REGISTRATION & STUDENT ENROLLMENT ANALYSIS REPORT
+ Data Source: Python Standard CSV Parser
+===========================================================================
+
+[ANALYSIS 1: COURSE ENROLLMENT ANALYSIS]
+ - Total Unique Courses with Enrollments : 8
+ - Total Unique Registered Students     : 10
+ - Total Active Course Registrations    : 24
+
+ Course-wise Enrollment Breakdown:
+   * CRS103 (Foundations of Data Science ): Enrolled:  5/ 6 | Avail:  1 | Occupancy:  83.3%
+   * CRS101 (Full Stack Web Development  ): Enrolled:  4/ 5 | Avail:  1 | Occupancy:  80.0%
+   * CRS105 (Professional Communication &): Enrolled:  4/ 8 | Avail:  4 | Occupancy:  50.0%
+   * CRS102 (Data Structures & Algorithms): Enrolled:  3/ 5 | Avail:  2 | Occupancy:  60.0%
+   * CRS104 (Machine Learning & Deep Neur): Enrolled:  3/ 3 | Avail:  0 | Occupancy: 100.0%
+   * CRS106 (Agile Software Engineering &): Enrolled:  2/ 6 | Avail:  4 | Occupancy:  33.3%
+   * CRS107 (Advanced Database Design & S): Enrolled:  2/ 4 | Avail:  2 | Occupancy:  50.0%
+   * CRS108 (Cyber Security & Network Def): Enrolled:  1/ 4 | Avail:  3 | Occupancy:  25.0%
+
+[ANALYSIS 2: POPULAR COURSE IDENTIFICATION]
+ - Most Popular Course         : Foundations of Data Science with Python (CRS103) with 5 enrollments
+ - Least Popular Course        : Cyber Security & Network Defense (CRS108) with 1 enrollments
+
+[ANALYSIS 3: STUDENT ENROLLMENT ANALYSIS]
+ - Students with Multiple Regs : 8 students
+
+[ANALYSIS 4: COURSE CAPACITY ANALYSIS]
+ - Institutional Total Capacity : 41 seats
+ - Institutional Total Enrolled : 24 seats
+ - Institutional Total Available: 17 seats
+
+[ANALYSIS 5: COURSE COMPLETION ANALYSIS]
+ - Total Completed Enrollments : 11
+ - Total Pending/In-Progress   : 13
+ - Overall Completion Rate     : 45.83%
+===========================================================================
