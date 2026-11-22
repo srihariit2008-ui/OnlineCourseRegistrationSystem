@@ -188,13 +188,3 @@ COMMIT;
 
 ---
 
-## 6. Viva Questions & Model Answers
-
-**Q1: How does your database prevent a student from registering twice for the same course?**  
-> *Answer*: Through a dual-layer defense. At the database level, the `enrollments` table enforces a composite unique constraint `CONSTRAINT uk_student_course UNIQUE (student_id, course_id)`. At the application level, `EnrollmentDAO.isStudentRegistered()` executes a pre-check query before attempting an insert.
-
-**Q2: What happens to available seats when a student cancels their registration?**  
-> *Answer*: The status is set to `'CANCELLED'`. Active seat calculations use `COUNT(CASE WHEN enrollment_status != 'CANCELLED' THEN ... END)`, so cancelled records immediately restore vacancy without deleting audit history.
-
-**Q3: Why use InnoDB over MyISAM?**  
-> *Answer*: InnoDB supports foreign key referential integrity, ACID transactional commits/rollbacks (`SET autocommit = 0`), and row-level locking (`FOR UPDATE`) essential for preventing race conditions in course registrations.
