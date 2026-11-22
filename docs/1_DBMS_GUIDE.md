@@ -19,7 +19,12 @@ To design, normalize, and implement a robust relational database schema (`online
 
 ## 2. Entity-Relationship (ER) Diagram
 
-### 2.1 Visual ER Diagram (Crow's Foot Notation)
+### 2.1 Visual ER Diagram Architecture
+*(Detailed documentation available in [ER_DIAGRAM.md](ER_DIAGRAM.md))*
+
+![Entity-Relationship Diagram](er_diagram.svg)
+
+### 2.2 Crow's Foot Notation (Mermaid Specification)
 
 ```mermaid
 erDiagram

@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 750" width="1020" height="750" style="background-color: #0f172a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Gradients & Drop Shadows -->
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feOffset dx="0" dy="4" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.35"/></feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <linearGradient id="hdr-students" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="hdr-courses" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#065f46" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="hdr-enrollments" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6b21a8" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="hdr-completions" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9a3412" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+    <marker id="crow-many" markerWidth="16" markerHeight="16" refX="1" refY="8" orient="auto">
+      <path d="M 1,8 L 14,1 M 1,8 L 14,15 M 1,8 L 15,8" fill="none" stroke="#94a3b8" stroke-width="2" />
+    </marker>
+    <marker id="circle-one" markerWidth="14" markerHeight="14" refX="1" refY="7" orient="auto">
+      <circle cx="7" cy="7" r="4" fill="#0f172a" stroke="#94a3b8" stroke-width="2" />
+      <line x1="13" y1="2" x2="13" y2="12" stroke="#94a3b8" stroke-width="2" />
+    </marker>
+  </defs>
+
+  <!-- Title & Header -->
+  <text x="510" y="45" text-anchor="middle" fill="#f8fafc" font-size="22" font-weight="700" letter-spacing="0.5">ENTITY-RELATIONSHIP (ER) DIAGRAM</text>
+  <text x="510" y="70" text-anchor="middle" fill="#94a3b8" font-size="13">Online Course Registration and Student Enrollment Analysis System (Scenario 17)</text>
+
+  <!-- ==================== ENTITY: STUDENTS ==================== -->
+  <g transform="translate(50, 110)" filter="url(#shadow)">
+    <rect width="280" height="270" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <path d="M 0,8 Q 0,0 8,0 L 272,0 Q 280,0 280,8 L 280,42 L 0,42 Z" fill="url(#hdr-students)" />
+    <text x="140" y="27" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" letter-spacing="1">STUDENTS</text>
+    
+    <!-- Attributes -->
+    <!-- student_id (PK) -->
+    <rect x="12" y="55" width="26" height="16" rx="3" fill="#f59e0b" />
+    <text x="25" y="67" text-anchor="middle" fill="#000" font-size="9" font-weight="800">PK</text>
+    <text x="46" y="68" fill="#e2e8f0" font-size="12" font-weight="600">student_id</text>
+    <text x="268" y="68" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(20)</text>
+
+    <!-- student_name -->
+    <text x="46" y="98" fill="#cbd5e1" font-size="12">student_name</text>
+    <text x="268" y="98" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(100)</text>
+
+    <!-- email (UK) -->
+    <rect x="12" y="115" width="26" height="16" rx="3" fill="#06b6d4" />
+    <text x="25" y="127" text-anchor="middle" fill="#000" font-size="9" font-weight="800">UK</text>
+    <text x="46" y="128" fill="#cbd5e1" font-size="12">email</text>
+    <text x="268" y="128" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(100)</text>
+
+    <!-- phone -->
+    <text x="46" y="158" fill="#cbd5e1" font-size="12">phone</text>
+    <text x="268" y="158" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(20)</text>
+
+    <!-- department -->
+    <text x="46" y="188" fill="#cbd5e1" font-size="12">department</text>
+    <text x="268" y="188" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(50)</text>
+
+    <!-- year_of_study (CHK) -->
+    <text x="46" y="218" fill="#cbd5e1" font-size="12">year_of_study</text>
+    <text x="268" y="218" text-anchor="end" fill="#64748b" font-size="11">INT (1..5)</text>
+
+    <!-- created_at -->
+    <text x="46" y="248" fill="#94a3b8" font-size="11" font-style="italic">created_at</text>
+    <text x="268" y="248" text-anchor="end" fill="#64748b" font-size="11">TIMESTAMP</text>
+  </g>
+
+  <!-- ==================== ENTITY: COURSES ==================== -->
+  <g transform="translate(690, 110)" filter="url(#shadow)">
+    <rect width="280" height="270" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <path d="M 0,8 Q 0,0 8,0 L 272,0 Q 280,0 280,8 L 280,42 L 0,42 Z" fill="url(#hdr-courses)" />
+    <text x="140" y="27" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" letter-spacing="1">COURSES</text>
+
+    <!-- course_id (PK) -->
+    <rect x="12" y="55" width="26" height="16" rx="3" fill="#f59e0b" />
+    <text x="25" y="67" text-anchor="middle" fill="#000" font-size="9" font-weight="800">PK</text>
+    <text x="46" y="68" fill="#e2e8f0" font-size="12" font-weight="600">course_id</text>
+    <text x="268" y="68" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(20)</text>
+
+    <!-- course_name -->
+    <text x="46" y="98" fill="#cbd5e1" font-size="12">course_name</text>
+    <text x="268" y="98" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(150)</text>
+
+    <!-- category (CHK) -->
+    <text x="46" y="128" fill="#cbd5e1" font-size="12">category</text>
+    <text x="268" y="128" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(50)</text>
+
+    <!-- duration -->
+    <text x="46" y="158" fill="#cbd5e1" font-size="12">duration</text>
+    <text x="268" y="158" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(50)</text>
+
+    <!-- max_capacity (CHK) -->
+    <text x="46" y="188" fill="#cbd5e1" font-size="12">max_capacity</text>
+    <text x="268" y="188" text-anchor="end" fill="#64748b" font-size="11">INT (> 0)</text>
+
+    <!-- description -->
+    <text x="46" y="218" fill="#cbd5e1" font-size="12">description</text>
+    <text x="268" y="218" text-anchor="end" fill="#64748b" font-size="11">TEXT</text>
+
+    <!-- created_at -->
+    <text x="46" y="248" fill="#94a3b8" font-size="11" font-style="italic">created_at</text>
+    <text x="268" y="248" text-anchor="end" fill="#64748b" font-size="11">TIMESTAMP</text>
+  </g>
+
+  <!-- ==================== ENTITY: ENROLLMENTS ==================== -->
+  <g transform="translate(370, 240)" filter="url(#shadow)">
+    <rect width="280" height="210" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <path d="M 0,8 Q 0,0 8,0 L 272,0 Q 280,0 280,8 L 280,42 L 0,42 Z" fill="url(#hdr-enrollments)" />
+    <text x="140" y="27" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" letter-spacing="1">ENROLLMENTS</text>
+
+    <!-- registration_id (PK) -->
+    <rect x="12" y="55" width="26" height="16" rx="3" fill="#f59e0b" />
+    <text x="25" y="67" text-anchor="middle" fill="#000" font-size="9" font-weight="800">PK</text>
+    <text x="46" y="68" fill="#e2e8f0" font-size="12" font-weight="600">registration_id</text>
+    <text x="268" y="68" text-anchor="end" fill="#64748b" font-size="11">INT AUTO_INC</text>
+
+    <!-- student_id (FK, UK) -->
+    <rect x="12" y="85" width="26" height="16" rx="3" fill="#3b82f6" />
+    <text x="25" y="97" text-anchor="middle" fill="#fff" font-size="9" font-weight="800">FK</text>
+    <text x="46" y="98" fill="#cbd5e1" font-size="12">student_id</text>
+    <text x="268" y="98" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(20)</text>
+
+    <!-- course_id (FK, UK) -->
+    <rect x="12" y="115" width="26" height="16" rx="3" fill="#3b82f6" />
+    <text x="25" y="127" text-anchor="middle" fill="#fff" font-size="9" font-weight="800">FK</text>
+    <text x="46" y="128" fill="#cbd5e1" font-size="12">course_id</text>
+    <text x="268" y="128" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(20)</text>
+
+    <!-- registration_date -->
+    <text x="46" y="158" fill="#cbd5e1" font-size="12">registration_date</text>
+    <text x="268" y="158" text-anchor="end" fill="#64748b" font-size="11">DATE</text>
+
+    <!-- enrollment_status (CHK) -->
+    <text x="46" y="188" fill="#cbd5e1" font-size="12">enrollment_status</text>
+    <text x="268" y="188" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(20)</text>
+  </g>
+
+  <!-- ==================== ENTITY: COMPLETIONS ==================== -->
+  <g transform="translate(370, 520)" filter="url(#shadow)">
+    <rect width="280" height="175" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <path d="M 0,8 Q 0,0 8,0 L 272,0 Q 280,0 280,8 L 280,42 L 0,42 Z" fill="url(#hdr-completions)" />
+    <text x="140" y="27" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" letter-spacing="1">COMPLETIONS</text>
+
+    <!-- completion_id (PK) -->
+    <rect x="12" y="55" width="26" height="16" rx="3" fill="#f59e0b" />
+    <text x="25" y="67" text-anchor="middle" fill="#000" font-size="9" font-weight="800">PK</text>
+    <text x="46" y="68" fill="#e2e8f0" font-size="12" font-weight="600">completion_id</text>
+    <text x="268" y="68" text-anchor="end" fill="#64748b" font-size="11">INT AUTO_INC</text>
+
+    <!-- registration_id (FK, UK) -->
+    <rect x="12" y="85" width="26" height="16" rx="3" fill="#3b82f6" />
+    <text x="25" y="97" text-anchor="middle" fill="#fff" font-size="9" font-weight="800">FK</text>
+    <text x="46" y="98" fill="#cbd5e1" font-size="12">registration_id</text>
+    <text x="268" y="98" text-anchor="end" fill="#64748b" font-size="11">INT (UNIQUE)</text>
+
+    <!-- completion_status (CHK) -->
+    <text x="46" y="128" fill="#cbd5e1" font-size="12">completion_status</text>
+    <text x="268" y="128" text-anchor="end" fill="#64748b" font-size="11">VARCHAR(20)</text>
+
+    <!-- completion_date -->
+    <text x="46" y="158" fill="#cbd5e1" font-size="12">completion_date</text>
+    <text x="268" y="158" text-anchor="end" fill="#64748b" font-size="11">DATE</text>
+  </g>
+
+  <!-- ==================== RELATIONSHIP CONNECTORS ==================== -->
+  
+  <!-- 1. STUDENTS to ENROLLMENTS (1 : N) -->
+  <path d="M 330,220 L 370,300" stroke="#60a5fa" stroke-width="2.5" fill="none" />
+  <rect x="305" y="240" width="80" height="22" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1" />
+  <text x="345" y="255" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="700">1 : N (Enrolls)</text>
+
+  <!-- 2. COURSES to ENROLLMENTS (1 : N) -->
+  <path d="M 690,220 L 650,300" stroke="#34d399" stroke-width="2.5" fill="none" />
+  <rect x="635" y="240" width="80" height="22" rx="4" fill="#1e293b" stroke="#10b981" stroke-width="1" />
+  <text x="675" y="255" text-anchor="middle" fill="#6ee7b7" font-size="10" font-weight="700">1 : N (Admits)</text>
+
+  <!-- 3. ENROLLMENTS to COMPLETIONS (1 : 1) -->
+  <path d="M 510,450 L 510,520" stroke="#f97316" stroke-width="2.5" fill="none" />
+  <rect x="460" y="473" width="100" height="22" rx="4" fill="#1e293b" stroke="#f97316" stroke-width="1" />
+  <text x="510" y="488" text-anchor="middle" fill="#fdba74" font-size="10" font-weight="700">1 : 1 (Certificate)</text>
+
+  <!-- Legend -->
+  <g transform="translate(50, 680)">
+    <rect width="920" height="45" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <rect x="30" y="15" width="24" height="15" rx="3" fill="#f59e0b" />
+    <text x="60" y="27" fill="#cbd5e1" font-size="11">Primary Key (PK)</text>
+
+    <rect x="180" y="15" width="24" height="15" rx="3" fill="#3b82f6" />
+    <text x="210" y="27" fill="#cbd5e1" font-size="11">Foreign Key (FK)</text>
+
+    <rect x="330" y="15" width="24" height="15" rx="3" fill="#06b6d4" />
+    <text x="360" y="27" fill="#cbd5e1" font-size="11">Unique Key (UK)</text>
+
+    <circle cx="500" cy="22" r="6" fill="#10b981" />
+    <text x="515" y="26" fill="#cbd5e1" font-size="11">InnoDB Referential Integrity (ON DELETE RESTRICT / CASCADE)</text>
+
+    <text x="890" y="27" text-anchor="end" fill="#94a3b8" font-size="11">Schema 3NF / BCNF Normalized</text>
+  </g>
+</svg>
