@@ -1,10 +1,9 @@
 @echo off
 REM ==============================================================================
-REM Online Course Registration System - DBMS Terminal Output Runner
-REM Runs directly in Windows Command Prompt (CMD) or PowerShell
+REM Scenario 17: Online Course Registration System - DBMS Terminal Output Launcher
 REM ==============================================================================
-cd /d "%~dp0java"
-echo [*] Compiling and Executing DBMS Output Runner...
-javac -d bin -cp ".;lib/*" src/DBMSOutput.java
-java -cp "bin;lib/*" src.DBMSOutput
-pause
+title DBMS Module - Online Course Registration System
+cls
+
+cd /d "%~dp0database"
+call run_dbms.bat
