@@ -209,15 +209,4 @@ java -cp "bin;lib/*" src.Main
 6. **Option 8 (Export Consolidated CSV Report)**:
    - Generates `reports/enrollment_report.csv` for data science processing.
 
----
 
-## 6. Viva Questions & Model Answers
-
-**Q1: Why did you make `AsyncAuditLogger` a Daemon Thread?**  
-> *Answer*: A daemon thread runs in the background at low priority and will not prevent the JVM from shutting down when the main console application finishes. It uses a thread-safe `LinkedBlockingQueue` to decouple file I/O latency from the user interface.
-
-**Q2: What is the difference between `Statement` and `PreparedStatement`?**  
-> *Answer*: `PreparedStatement` is precompiled by the database engine, offering faster execution for repeated queries. More importantly, it parameterizes inputs using placeholder marks (`?`), completely preventing SQL Injection attacks.
-
-**Q3: How are ACID properties upheld during course registration?**  
-> *Answer*: By setting `conn.setAutoCommit(false)`, the check for remaining capacity and the registration insert are bundled into a single atomic transaction. If capacity is 0 or an error occurs, `conn.rollback()` restores the database state.

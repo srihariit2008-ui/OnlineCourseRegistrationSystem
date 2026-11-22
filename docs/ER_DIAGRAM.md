@@ -111,15 +111,4 @@ The conceptual ER model maps directly into the relational schema following stand
 * **3NF (No Transitive Dependency)**: In every relation, if $X \rightarrow Y$, then either $X$ is a superkey or $Y$ is a prime attribute.
 * **BCNF (Boyce-Codd Normal Form)**: For every non-trivial functional dependency $X \rightarrow Y$, $X$ is strictly a superkey. Eliminates all update, deletion, and insertion anomalies.
 
----
 
-## 7. ER Diagram Viva Questions & Model Answers
-
-**Q1: Why is `ENROLLMENTS` modeled as an entity rather than a simple M:N relationship table?**  
-> *Answer*: In course management, a registration has its own lifecycle attributes (`registration_date`, `enrollment_status`) and serves as the parent entity for course completions (`COMPLETIONS`). Promoting it to an associative entity with a surrogate primary key (`registration_id`) provides cleaner indexing and simplifies foreign key references.
-
-**Q2: How does the ER model handle student registration cancellation?**  
-> *Answer*: Rather than executing a hard `DELETE` that would destroy institutional audit history, the relationship state changes to `enrollment_status = 'CANCELLED'`. SQL views and queries compute available capacity dynamically by filtering `enrollment_status != 'CANCELLED'`.
-
-**Q3: How is duplicate enrollment prevented structurally in the schema?**  
-> *Answer*: Through a composite unique constraint `UNIQUE (student_id, course_id)` on the `ENROLLMENTS` table, ensuring that the database engine rejects any attempt by a student to register twice for the same course offering.

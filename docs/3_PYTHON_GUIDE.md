@@ -161,15 +161,4 @@ python analysis.py
 ===========================================================================
 ```
 
----
 
-## 6. Viva Questions & Model Answers
-
-**Q1: Why did you choose SVG format over PNG for chart exports?**  
-> *Answer*: Scalable Vector Graphics (SVG) are resolution-independent XML-based vector graphics. They render crisply on high-DPI displays and academic project documentation without pixelation, have smaller file footprints, and can be embedded directly into markdown and web documents.
-
-**Q2: How does the Python module handle missing database connectivity?**  
-> *Answer*: It implements a graceful fallback pattern. If MySQL server connection fails or is unavailable on a client machine, `load_enrollment_data()` automatically reads and parses the verified snapshot dataset from `reports/enrollment_report.csv`.
-
-**Q3: What statistical insights does the analysis provide for curriculum planning?**  
-> *Answer*: It reveals that Data Science (`CRS103`) and Web Development (`CRS101`) have greater than 80% occupancy, indicating high student demand that warrants opening additional batch sections. Conversely, Cyber Security (`CRS108`) has only 25% occupancy, signaling a need for curriculum review or schedule adjustments.
